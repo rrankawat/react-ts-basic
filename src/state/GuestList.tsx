@@ -12,6 +12,11 @@ const GuestList: React.FC = () => {
   return (
     <div>
       <h2>Guest List</h2>
+      <ul>
+        {guests.map((guest) => (
+          <li key={guest}>{guest}</li>
+        ))}
+      </ul>
 
       <input
         type="text"
