@@ -1,12 +1,13 @@
-import ReactDOM from 'react-dom'
-import UserSearch from './state/UserSearch'
+import { createRoot } from 'react-dom/client'
+import EventComponent from './events/EventComponent'
 
 const App = () => {
   return (
     <div>
-      <UserSearch />
+      <EventComponent />
     </div>
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const root = createRoot(document.getElementById('root') as HTMLElement)
+root.render(<App />)
